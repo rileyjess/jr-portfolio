@@ -1,0 +1,34 @@
+/* Styles that apply to the entire website */
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color:black;
+    scroll-behavior: smooth;
+}
+
+/* Styles that apply to the navigation bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    font-size: 30px;
+}
+
+/* Changing the list in the navigation bar to stay on the right side and the 
+items to show side by side */
+li {
+     list-style-type: none;
+     display: inline;
+     float: right;
+     padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* When the mouse hovers over links, they will become green and underlined */
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
