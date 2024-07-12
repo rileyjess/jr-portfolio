@@ -1,6 +1,7 @@
 /* Styles that apply to the entire website */
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
     background-color: white;
     color:black;
     scroll-behavior: smooth;
@@ -11,8 +12,9 @@
     padding: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 20vh;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Changing the list in the navigation bar to stay on the right side and the 
@@ -28,9 +30,13 @@ a {
     text-decoration: none;
 }
 
-/* When the mouse hovers over links, they will become green and underlined */
+h1 {
+    font-size: 20px;
+}
+
+/* When the mouse hovers over links, they will become green */
 a:hover {
-    color: #00a86b;
+    color: #7085ff;
     transition: all 0.3s ease;
 }
 
@@ -38,6 +44,10 @@ a:hover {
 /* About section */
 h2 {
     font-size: 20px;
+}
+
+p {
+    font-size: 64px;
 }
 
 #about,
@@ -59,7 +69,7 @@ h2 {
 }
 
 img {
-    width:90%;
+    width:100%;
     display: flex;
     justify-content: center;
 }
@@ -68,18 +78,39 @@ img {
     display: flex;
     justify-content: center;
     padding: 20px;
-    width: 90%;
+    width: 100%;
 }
 
 .image-row img {
     width: 45%;
 }
 
-@media screen and (max-width: 800px) {
+#work img:hover {
+    transform: scale(0.95);
+}
+
+/* Contact*/
+#contact {
+    display: flex;
+    justify-content: left;
+}
+
+
+/* At a screen width of 768px or less, the row of images will become a column
+and the paragraph txt will become smaller */
+@media screen and (max-width: 768px) {
+    .nav {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+    }
     .image-row {
-      display: block;
+     display: block;
     }
     .image-row img {
-        width: 90%;
+     width: 90%;
+    }
+    #about p {
+     font-size: 30px;
     }
 }
