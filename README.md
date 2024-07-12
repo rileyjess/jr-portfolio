@@ -12,10 +12,10 @@ Acceptance Criteria:
 - When the page or view the site on various screens and devices, the layout adapts to that viewport
 
 ## Website Screenshot
-
+![Screenshot](https://github.com/user-attachments/assets/f2ca6c18-6aff-45f0-8f90-cf9061d02882)
 
 ## Deployed Website
-
+https://rileyjess.github.io/jr-portfolio/
 
 ## License
 MIT License
